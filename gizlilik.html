@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="PinkWords gizlilik politikası.">
+<title>PinkWords Gizlilik Politikası</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,600;1,9..144,600&family=Source+Sans+3:wght@400;600&family=IBM+Plex+Mono:wght@500&display=swap">
+<style>
+/* Layout: one readable column printed like a zine page — pink masthead, a short "at a glance"
+   strip, then numbered-free sections (the order is not a sequence). Two riso inks on paper. */
+:root {
+  --paper: #FBF2EC; --card: #FFFDF9; --ink: #2A2124; --soft: #6F5D64; --rule: #E7D3D9;
+  --pink: #C85A7A; --pink-wash: #F6DCE3; --mint: #3F8A82; --mint-wash: #DCEDEA;
+  --display: "Fraunces", Georgia, "Times New Roman", serif;
+  --body: "Source Sans 3", -apple-system, "Segoe UI", sans-serif;
+  --mono: "IBM Plex Mono", ui-monospace, Menlo, monospace;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --paper: #1A1416; --card: #241B1F; --ink: #F3E9EC; --soft: #BBA8AF; --rule: #3B2E33;
+  --pink: #EE9DB3; --pink-wash: #44252F; --mint: #7CC2B9; --mint-wash: #1F3835; color-scheme: dark } }
+:root[data-theme="dark"] {
+  --paper: #1A1416; --card: #241B1F; --ink: #F3E9EC; --soft: #BBA8AF; --rule: #3B2E33;
+  --pink: #EE9DB3; --pink-wash: #44252F; --mint: #7CC2B9; --mint-wash: #1F3835; color-scheme: dark }
+
+* { box-sizing: border-box }
+body { background: var(--paper); color: var(--ink); font: 17px/1.6 var(--body);
+  padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+.page { max-width: 680px; margin: 0 auto; padding-block: 40px 64px; display: grid; gap: 28px }
+header { display: grid; gap: 10px; border-bottom: 1.5px solid var(--ink); padding-bottom: 20px }
+.eyebrow { font: 500 12px/1.2 var(--mono); letter-spacing: .08em; text-transform: uppercase; color: var(--mint) }
+h1 { margin: 0; font: italic 600 clamp(32px, 7vw, 44px)/1.05 var(--display); color: var(--pink);
+  text-shadow: 2px 2px 0 color-mix(in srgb, var(--mint) 55%, transparent); text-wrap: balance }
+.lede { margin: 0; color: var(--soft) }
+.glance { background: var(--card); border: 1.4px solid var(--ink); border-radius: 4px; padding: 18px 20px;
+  box-shadow: 4px 4px 0 color-mix(in srgb, var(--mint) 35%, transparent); display: grid; gap: 10px }
+.glance h2 { font: 600 13px/1.2 var(--mono); letter-spacing: .08em; text-transform: uppercase; margin: 0; color: var(--ink) }
+.glance ul { margin: 0; padding: 0; list-style: none; display: grid; gap: 8px }
+.glance li { display: grid; grid-template-columns: 22px 1fr; gap: 8px; align-items: start }
+.glance li::before { content: "✓"; font-weight: 600; color: var(--mint) }
+section { display: grid; gap: 8px }
+h2 { margin: 0; font: 600 22px/1.25 var(--display); text-wrap: balance }
+p { margin: 0 }
+section ul { margin: 0; padding-left: 20px; display: grid; gap: 6px }
+code { font: 500 14px var(--mono); background: var(--pink-wash); padding: 1px 5px; border-radius: 3px; overflow-wrap: anywhere }
+a { color: var(--mint) }
+a:focus-visible { outline: 2px solid var(--pink); outline-offset: 2px }
+footer { border-top: 1px solid var(--rule); padding-top: 16px; font: 500 13px/1.5 var(--mono); color: var(--soft) }
+</style>
+<style>body{margin:0}</style>
+</head>
+<body>
+
+<div class="page">
+  <header>
+    <span class="eyebrow">PinkWords · İngilizce kelime öğrenme</span>
+    <h1>Gizlilik Politikası</h1>
+    <p class="lede">PinkWords'ün hangi bilgileri nerede tuttuğunu ve bunları nasıl silebileceğini burada bulursun. Yürürlük tarihi: 25 Ekim 2026.</p>
+  </header>
+
+  <div class="glance">
+    <h2>Kısaca</h2>
+    <ul>
+      <li>PinkWords'ün kendi sunucusu yok. Senin hakkında hiçbir bilgiyi biz toplamıyor, saklamıyor ya da görmüyoruz.</li>
+      <li>Reklam, analitik, takip ve üçüncü taraf SDK yok.</li>
+      <li>Giriş yaparsan çalışma verilerinin yedeği yalnızca senin iCloud hesabında durur.</li>
+      <li>Ödemeyi Apple alır. Kart bilgilerin bize hiç ulaşmaz.</li>
+    </ul>
+  </div>
+
+  <section>
+    <h2>Uygulamanın tuttuğu bilgiler</h2>
+    <p>Kelime çalışırken uygulama şunları cihazında saklar:</p>
+    <ul>
+      <li>Çalıştığın kelimeler ve aralıklı tekrar durumu (ne zaman tekrar edileceği)</li>
+      <li>Step ilerlemen ve test puanların</li>
+      <li>Günlük çalışma sayıların ve serin</li>
+      <li>Kelime defterin ve kendi eklediğin kelimeler</li>
+      <li>Seviyen, günlük hedefin ve tema gibi tercihlerin</li>
+    </ul>
+    <p>Seslendirme cihazın kendi ses motoruyla yapılır; bunun için internete bağlanılmaz.</p>
+  </section>
+
+  <section>
+    <h2>Apple ile giriş</h2>
+    <p>Hesap açmak isteğe bağlıdır; uygulama hesapsız da tam çalışır. Apple ile giriş yaparsan Apple uygulamaya şunları verir: hesabına özel bir kimlik numarası ve paylaşmayı seçersen adın ve e-posta adresin. Bu bilgiler yalnızca cihazında, profil ekranında göstermek için durur. E-postanı gizlemeyi de seçebilirsin.</p>
+  </section>
+
+  <section>
+    <h2>Yedeğin nerede durur</h2>
+    <p>Yedek, iCloud hesabındaki özel CloudKit veritabanında tek bir kayıt olarak durur. Bu alana yalnızca sen erişebilirsin; biz de dahil kimse göremez.</p>
+    <p>Yedek, yukarıda listelenen çalışma verilerini içerir. Uygulama bu yedeği farklı cihazlarındaki ilerlemeyi eşitlemek için kullanır. Yedeğin saklanması Apple'ın gizlilik politikasına tabidir.</p>
+  </section>
+
+  <section>
+    <h2>PinkWords Pro ve ödemeler</h2>
+    <p>Abonelikler App Store üzerinden satılır; ödemeyi, deneme süresini ve yenilemeyi Apple yönetir. Uygulama yalnızca aboneliğinin etkin olup olmadığını Apple'dan öğrenir. Aboneliğini iPhone'unda Ayarlar &gt; Apple Hesabı &gt; Abonelikler bölümünden yönetebilir ya da iptal edebilirsin.</p>
+  </section>
+
+  <section>
+    <h2>Verilerini silmek</h2>
+    <ul>
+      <li><b>Hesabı ve yedeği silmek:</b> Profil &gt; Hesap &gt; Hesabı sil. iCloud yedeğin silinir ve oturumun kapanır.</li>
+      <li><b>Cihazdaki ilerlemeyi silmek:</b> Profil &gt; İlerlemeyi sıfırla. Uygulamayı silmek de cihazdaki bütün verileri kaldırır.</li>
+      <li><b>Apple ile girişi kaldırmak:</b> Ayarlar &gt; Apple Hesabı &gt; Oturum Açma ve Güvenlik &gt; Apple ile Giriş Yap &gt; PinkWords.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Çocuklar</h2>
+    <p>PinkWords her yaştan öğrenciye uygundur ve kimseden kişisel bilgi toplamaz. Giriş ve satın alma işlemleri Apple'ın yaş ve Aile Paylaşımı ayarlarına tabidir.</p>
+  </section>
+
+  <section>
+    <h2>Değişiklikler ve iletişim</h2>
+    <p>Bu politika değişirse güncel hali bu sayfada, yeni yürürlük tarihiyle yayımlanır. Sorularını PinkWords'ün App Store sayfasındaki destek bağlantısından iletebilirsin.</p>
+  </section>
+
+  <footer>PinkWords · Gizlilik Politikası · 25 Ekim 2026</footer>
+</div>
+
+</body>
+</html>
